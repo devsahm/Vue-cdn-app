@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random User Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <div id="app">
+            <img :class="gender" :src="picture" :alt="`${firstname} ${lastname}`">
+           <h1>{{firstname}} {{lastname}}</h1>
+           <h3>Email: {{email}}</h3>
+           <button :class="gender" v-on:click="getUser()">Get Random User</button>
+
+        </div>
+
+       
+        <script src="https://unpkg.com/vue@3"></script>
+        <script src="app.js"></script>
+    </body>
+   
+</html>
